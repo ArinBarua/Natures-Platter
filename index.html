@@ -7,10 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <style>
         .font-sora{
             font-family: "Sora", serif;
+        }
+        .font-adlam-display{
+            font-family: "ADLaM Display", serif;
         }
         .color-primary{
             color: #179800;
@@ -64,9 +67,83 @@
          </div>
     </header>
     <main>
-        <section>
+        <!-- service section -->
+        <section class="p-16">
             <div>
                 <h2 class="text-[#179800] font-semibold text-4xl">Services</h2>
+            </div>
+            <div class="mt-12 flex max-[600px]:flex max-[600px]:flex-col gap-5">
+                <div class="bg-[#EFEBE3] border-none rounded-2xl p-5">
+                    <div class=" flex-col items-center justify-center">
+                        <div class="flex items-center justify-center">
+                            <div class="w-[120px] h-[120px] bg-white rounded-full relative">
+                                <img  class="w-[80px] h-[80px] absolute top-5 left-5" src="./c2-assets/service.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-2xl font-semibold my-3">24/7 Services</h3>
+                            <p class="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quibusdam dignissimos possimus ab delectus maiores itaque inventore! Quia quam, blanditiis dolorum itaque optio tenetur commodi! Veritatis quas accusantium deleniti perferendis?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#EFEBE3] border-none rounded-2xl p-5">
+                    <div class=" flex-col items-center justify-center">
+                        <div class="flex items-center justify-center">
+                            <div class="w-[120px] h-[120px] bg-white rounded-full relative">
+                                <img  class="w-[80px] h-[80px] absolute top-5 left-5" src="./c2-assets/delivery.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-2xl font-semibold my-3">Fast Delivery</h3>
+                            <p class="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quibusdam dignissimos possimus ab delectus maiores itaque inventore! Quia quam, blanditiis dolorum itaque optio tenetur commodi! Veritatis quas accusantium deleniti perferendis?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#EFEBE3] border-none rounded-2xl p-5">
+                    <div class=" flex-col items-center justify-center">
+                        <div class="flex items-center justify-center">
+                            <div class="w-[120px] h-[120px] bg-white rounded-full relative">
+                                <img  class="w-[80px] h-[80px] absolute top-5 left-5" src="./c2-assets/healthy.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-2xl font-semibold my-3">Healthy Products</h3>
+                            <p class="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quibusdam dignissimos possimus ab delectus maiores itaque inventore! Quia quam, blanditiis dolorum itaque optio tenetur commodi! Veritatis quas accusantium deleniti perferendis?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- category section -->
+        <section class="p-16">
+            <div>
+                <h2 class="text-[#179800] font-semibold text-4xl">Categories</h2>
+            </div>
+        </section>
+        <!-- popular products -->
+        <section class="bg-[#EFEBE3] p-16">
+            <div>
+                <h2 class="text-[#179800] font-semibold text-4xl">Popular Products</h2>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <h3 class="font-adlam-display font-normal text-3xl"><span style="color: #EFEBE3;">30</span><span style="color: white;">% off</span></h3>
+                        <p class="text-sm font-normal">Discover a world of treats, toys, and <br>essentials handpicked for</p>
+                        <button class="text-lg bg-white px-6 py-2 border-none rounded-lg">Buy Now</button>
+                    </div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+        <!-- Arrival & Offers -->
+        <section class="p-16">
+            <div>
+                <h2 class="text-[#179800] font-semibold text-4xl">Arrival & Offers</h2>
             </div>
         </section>
     </main>
