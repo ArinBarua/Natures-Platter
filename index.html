@@ -7,13 +7,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <style>
         .font-sora{
             font-family: "Sora", serif;
         }
         .font-adlam-display{
             font-family: "ADLaM Display", serif;
+        }
+        .font-poppins{
+            font-family: "Poppins", serif;
         }
         .color-primary{
             color: #179800;
@@ -47,7 +50,7 @@
                         <i class="fa-solid fa-magnifying-glass text-xl mr-4"></i>
                         <i class="fa-solid fa-cart-shopping text-xl mr-5"></i>    
                         <a href=""><button class="text-xl border border-solid rounded-lg border-[#179800] px-5 py-2 hover:border hover:text-white hover:bg-[#179800]">Log In</button></a>
-                        <a href=""><button class="text-xl text-white border rounded-lg bg-[#179800] px-5 py-2 hover:border hover:border-solid hover:text-black hover:border-[#179800] hover:bg-white">Register</button></a>
+                        <a href=""><button class="text-xl text-white border rounded-lg bg-[#179800] px-5 py-2 hover:border hover:border-solid hover:text-[#179800] last:hover:border-[#179800] hover:bg-white">Register</button></a>
                     </div>
                 </div>
             </div>
@@ -276,69 +279,97 @@
             </div>
         </section>
         <!-- Arrival & Offers -->
-        <section class="p-16 max-[600px]:p-10">
+        <section class="p-16 max-[600px]:p-10 mb-80">
             <div>
                 <h2 class="text-[#179800] font-semibold text-4xl max-[600px]:text-3xl">Arrival & Offers</h2>
             </div>
-            <div class="flex gap-5 py-5">
-                <div class="flex items-center justify-center gap-5 bg-[#115414] rounded-3xl p-7">
+            <div class="grid max-[600px]:grid-cols-1 lg:grid-cols-9 gap-5 py-5">
+                <div class="grid grid-cols-2 max-[600px]:col-span-1 lg:col-span-5 items-center place-items-stretch justify-between gap-8 bg-[#115414] rounded-3xl p-7">
                     <div>
                         <div>
                             <img src="./c2-assets/dawat-logo.png" alt="">
                         </div>
-                        <div>
-                            <p>Cook Exotic Dishes</p>
+                        <div class="bg-[#63B76D] border-none rounded-xl">
+                            <p class="font-poppins max-[600px]:text-sm lg:text-lg font-light text-white text-center py-2 my-4">Cook Exotic Dishes</p>
                         </div>
                         <div>
-                            <h3>UP to 20% OFF</h3>
+                            <h3><span class="font-poppins max-[600px]:text-xl lg:text-3xl font-light text-white">UP to </span><span class="font-poppins max-[600px]:text-xl lg:text-3xl font-semibold text-white">20% OFF</span></h3>
                         </div>
                     </div>
-                    <div class="h-full w-full justify-items-end border border-solid border-white">
-                        <img class="h-full" src="./c2-assets/dawat-mock-up.png" alt="">
+                    <div class="justify-items-end">
+                        <img src="./c2-assets/dawat-mock-up.png" alt="">
                     </div>
                 </div>
-                <div class="flex items-center justify-center gap-5 bg-[#102861] rounded-3xl p-7">
+                <div class="grid grid-cols-2 max-[600px]:col-span-1 lg:col-span-4 items-start place-items-stretch justify-between gap-3 bg-[#102861] rounded-3xl p-7">
                     <div>
                         <div>
-                            <img src="./c2-assets/india-gate-logo.png" alt="">
+                            <img class="max-[600px]:h-[100px]" src="./c2-assets/india-gate-logo.png" alt="">
+                        </div>
+                        <div class="bg-[#2A4D97] border-none rounded-xl">
+                            <p class="font-poppins max-[600px]:text-sm lg:text-lg font-light text-white text-center py-2 my-4">World's No.1 Rice</p>
                         </div>
                         <div>
-                            <p>World's No.1 Rice</p>
-                        </div>
-                        <div>
-                            <h3>UP to 40% OFF</h3>
+                            <h3><span class="font-poppins max-[600px]:text-xl lg:text-3xl font-light text-white">UP to </span><span class="font-poppins max-[600px]:text-xl lg:text-3xl font-semibold text-white">40% OFF</span></h3>
                         </div>
                     </div>
-                    <div class="h-full w-full justify-items-end">
-                        <img class="h-full" src="./c2-assets/india-gate-mock-up.png" alt="">
+                    <div class="justify-items-end">
+                        <img class="max-[600px]:h-[200px] lg:h-[250px]" src="./c2-assets/india-gate-mock-up.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
+        <!-- <section class="m-16">
+            <div class="bg-[#EFEBE3] rounded-3xl flex items-center justify-between p-16">
+                <div>
+                    <img src="./c2-assets/vegetable-busket.png" alt="">
+                </div>
+                <div class="flex flex-col gap-5">
+                    <h2 class="text-[#111111] font-semibold text-4xl max-[600px]:text-3xl">Get Grocery News!</h2>
+                    <p class="text-lg max-[600px]:text-sm font-light">Exclusive training tips, ticks, product deals and more.</p>
+                    <input class="p-5 rounded-lg" type="text" name="" id="" placeholder="Enter Email">
+                    <a href=""><button class="text-xl text-white border rounded-lg bg-[#179800] px-5 py-2 hover:border hover:border-solid hover:text-[#179800] hover:border-[#179800] hover:bg-white">Subscribe</button></a>
+                </div>
+            </div>
+        </section> -->
     </main>
-    <footer class="bg-[#179800]">
-        <div class="flex items-center justify-between">
-            <div>
-                <img class="bg-white" src="./c2-assets/logo-header.png" alt="">
-                <p class="text-[12px] text-white font-light">Discover a world of treats, toys, <br>and essentials handpicked for <br>your furry friends</p>
-            </div>
-            <div class="inline space-y-5">
-                <div><p class="text-[12px] text-white font-light">Products</p></div>
-                <div><p class="text-[12px] text-white font-light">Services</p></div>
-                <div><p class="text-[12px] text-white font-light">Contacts</p></div>
-            </div>
-            <div class="flex flex-row justify-end">
+    <footer class="h-[500px] w-full relative">
+        <section class="m-16 w-[1135px] h-full absolute bottom-44 z-[1]">
+            <div class="bg-[#EFEBE3] rounded-3xl flex items-center justify-between p-16">
                 <div>
-                    <p class="text-[12px] text-white font-light">Follow Us</p>
+                    <img src="./c2-assets/vegetable-busket.png" alt="">
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                <div class="flex flex-col gap-5">
+                    <h2 class="text-[#111111] font-semibold text-4xl max-[600px]:text-3xl">Get Grocery News!</h2>
+                    <p class="text-lg max-[600px]:text-sm font-light">Exclusive training tips, ticks, product deals and more.</p>
+                    <input class="p-5 rounded-lg" type="text" name="" id="" placeholder="Enter Email">
+                    <a href=""><button class="text-xl text-white border rounded-lg bg-[#179800] px-5 py-2 hover:border hover:border-solid hover:text-[#179800] hover:border-[#179800] hover:bg-white">Subscribe</button></a>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="bg-[#179800] p-16 pt-64 h-[600px] w-full absolute z-0">
+            <div class="mt-24 max-[600px]:flex max-[600px]:flex-col lg:flex lg:items-end lg:justify-between">
+                <div>
+                    <img class="bg-white max-[600px]:w-[80px]" src="./c2-assets/logo-header.png" alt="">
+                    <p class="text-[12px] text-white font-light">Discover a world of treats, toys, <br>and essentials handpicked for <br>your furry friends</p>
+                </div>
+                <div class="inline max-[600px]:space-y-2 lg:space-y-5">
+                    <div><p class="text-[12px] text-white font-light">Products</p></div>
+                    <div><p class="text-[12px] text-white font-light">Services</p></div>
+                    <div><p class="text-[12px] text-white font-light">Contacts</p></div>
+                </div>
+                <div class="flex flex-col">
+                    <div>
+                        <p class="text-[12px] text-white font-light">Follow Us</p>
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
